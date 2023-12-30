@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.cs">
+    <title>web1</title>
+</head>
+<body>
+    <section class="header" id="head">
+        <div class="nav-bar">
+        <div class="logo">
+        <a href="#">Ssangyong</a>
+    </div>
+        <div class="menu">
+        <ul>
+            <li><a href="#" class="active">cars</a></li>
+            <li><a  href="#">history </a></li>
+            <li><a href="#">technology</a></li>
+            <li><a href="#">pruduction</a></li>
+            <li><a href="#">reviews</a></li>
+        </ul>
+    </div>
+<div class="social-media">
+    <ul>
+      <li><a href="#"><i class="fa fa-facebook"> <a href="hok.com/"></a></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#"><i class=""></i></a></li>
+</ul>
+</div>
+</div>
+<div class="hero">
+    <div class="row">
+     <div class="left-sec">
+      <div class="content">
+        <h2><span>Ssangyong</span><br>rextone</h2>
+        <p>its a corien suv car that have pawerful enigen </p>
+      </div>
+      <button class="discover-btn">
+        <a href="#">discover</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+      </button>
+      <div class="information">
+      <div class="production">
+        <p>production</p>
+        <h2>2012-2023</h2>
+      </div>
+      <div class="production">
+        <p>designer</p>
+        <h2>code213</h2>
+     </div>
+     </div>
+    </div>
+    <div class="right-sec">
+      <div class="my-car">
+<div><img src="web2.jpg"></div>
+<div><img src="web3.jpg"></div>
+<div><img src="web4.jpg"></div>
+<div><img src="web1.jpg"></div>
+      </div>
+    </div>
+ </div>
+</div>
+</div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+   <script  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+   <script type="text/javascript">
+    $(document).ready(function(){
+      $(".my-car").slick({
+        autoplay:true,
+        dots:true,
+        speed:1000,
+        custompaging :function(slider,i){
+          var thumb = $ (slider.$slides[i]).data();
+          return '<a>'+(i+1)+'</a>';
+        },
+      })
+    });
+   </script>
+   <script src="/script.js"></script>
+   
+   
+</body>
+</html>
